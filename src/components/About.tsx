@@ -1,20 +1,20 @@
 // src/components/About.tsx
 import React from 'react';
-import { useInView } from 'react-intersection-observer'; // Import useInView
+import { useInView } from 'react-intersection-observer';
 
 const About: React.FC = () => {
   const { ref, inView } = useInView({
-    triggerOnce: true, // Animation only plays once when component enters view
-    threshold: 0.1,    // Percentage of component visible to trigger
+    triggerOnce: true,
+    threshold: 0.1, // Trigger when 10% of the component is visible
   });
 
   return (
-    <section id="about" className="py-16 md:py-24 text-gray-800">
+    <section id="about" className="py-16 md:py-24">
       <div className="container mx-auto px-6">
         {/* Inner content box for readability over the gradient */}
-        <div 
-          ref={ref} // Attach the ref to the element you want to observe
-          className={`bg-white p-8 md:p-12 rounded-lg shadow-xl max-w-4xl mx-auto 
+        <div
+          ref={ref}
+          className={`bg-white p-8 md:p-12 rounded-lg shadow-xl max-w-4xl mx-auto text-gray-800
             transition-all duration-1000 ease-out
             ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}
           `}
@@ -22,15 +22,33 @@ const About: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
             About Me
           </h2>
-          <div className="max-w-3xl mx-auto text-lg md:text-xl leading-relaxed">
-            <p className="mb-6">
-              Hi, I'm Dinu, a passionate programmer from Kochi, Kerala. My journey into the world of code began with a fascination for how technology solves real-world problems. I thrive on bringing ideas to life through elegant and efficient solutions.
-            </p>
-            <p className="mb-6">
-              I specialize in full-stack development, with a strong foundation in both front-end technologies like React and back-end frameworks. I enjoy the challenge of building robust applications from concept to deployment.
+
+          <div className="text-lg md:text-xl leading-relaxed space-y-6">
+            <p>
+              Hello! I'm Dinu Sreekumar, an aspiring professional from Kochi, Kerala, and
+              currently a **3rd-year BCA degree student at Christ College Irinjalakuda**.
+              I have a passion for leveraging technology to solve real-world problems. My journey in tech spans both
+              data-driven insights and engaging web experiences. I thrive on learning
+              and continuously expanding my skill set in areas like **Python, Machine Learning,
+              Data Visualization, and modern web development using React, TypeScript, and Tailwind CSS.**
             </p>
             <p>
-              When I'm not coding, you can find me exploring new tech trends, contributing to open-source projects, or enjoying a good book. I'm always eager to learn and grow, and I believe in the power of continuous self-improvement.
+              My hands-on experience includes developing practical applications like the
+              **Customer Churn Prediction** model, where I executed an end-to-end machine learning
+              pipeline. This involved extensive data preprocessing, training a **Random Forest Classifier**
+              to identify key churn factors for a telecom company, and rigorously evaluating its performance.
+              It demonstrated my ability to transform raw data into actionable business insights.
+            </p>
+            <p>
+              Additionally, I built a **Python Personal Finance Tracker with Data Visualization**,
+              utilizing **Pandas, Matplotlib, and Seaborn** to empower users with a clear understanding
+              of their financial health through interactive charts. Both these projects were
+              developed with guidance from **Google's Gemini AI**, showcasing my adaptability
+              and proficiency in leveraging advanced AI tools for enhanced learning and development.
+            </p>
+            <p>
+              I am always eager to take on new challenges and collaborate on projects that push the
+              boundaries of what's possible with data and intuitive user interfaces. Let's connect and build something impactful!
             </p>
           </div>
         </div>

@@ -25,25 +25,25 @@ const About: React.FC = () => {
 
           <div className="text-lg md:text-xl leading-relaxed space-y-6">
             <p>
-              Hello! I'm Dinu Sreekumar, an aspiring professional from Kochi, Kerala, and
-              currently a **3rd-year BCA degree student at Christ College Irinjalakuda**.
+              Hello! I'm Dinu Sreekumar, an aspiring professional from <strong>Kochi, Kerala</strong>, and
+              currently a <strong>3rd-year BCA degree student at Christ College Irinjalakuda</strong>.
               I have a passion for leveraging technology to solve real-world problems. My journey in tech spans both
               data-driven insights and engaging web experiences. I thrive on learning
-              and continuously expanding my skill set in areas like **Python, Machine Learning,
-              Data Visualization, and modern web development using React, TypeScript, and Tailwind CSS.**
+              and continuously expanding my skill set in areas like <strong>Python, Machine Learning,
+              Data Visualization</strong>, and modern web development using <strong>React, TypeScript, and Tailwind CSS</strong>.
             </p>
             <p>
               My hands-on experience includes developing practical applications like the
-              **Customer Churn Prediction** model, where I executed an end-to-end machine learning
-              pipeline. This involved extensive data preprocessing, training a **Random Forest Classifier**
+              <strong>Customer Churn Prediction</strong> model, where I executed an end-to-end machine learning
+              pipeline. This involved extensive data preprocessing, training a <strong>Random Forest Classifier</strong>
               to identify key churn factors for a telecom company, and rigorously evaluating its performance.
               It demonstrated my ability to transform raw data into actionable business insights.
             </p>
             <p>
-              Additionally, I built a **Python Personal Finance Tracker with Data Visualization**,
-              utilizing **Pandas, Matplotlib, and Seaborn** to empower users with a clear understanding
+              Additionally, I built a <strong>Python Personal Finance Tracker with Data Visualization</strong>,
+              utilizing <strong>Pandas, Matplotlib, and Seaborn</strong> to empower users with a clear understanding
               of their financial health through interactive charts. Both these projects were
-              developed with guidance from **Google's Gemini AI**, showcasing my adaptability
+              developed with guidance from <strong>Google's Gemini AI</strong>, showcasing my adaptability
               and proficiency in leveraging advanced AI tools for enhanced learning and development.
             </p>
             <p>

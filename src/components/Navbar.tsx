@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
       <div
         className={`fixed inset-0 bg-gray-900 bg-opacity-95 transform transition-transform duration-300 ease-in-out md:hidden
           ${isOpen ? 'translate-x-0' : 'translate-x-full'}
-          flex flex-col items-center justify-center space-y-8 text-xl
+          flex flex-col items-center pt-20 overflow-y-auto text-xl // Changed: removed 'justify-center', added 'pt-20' and 'overflow-y-auto'
         `}
       >
         <button onClick={toggleMenu} className="absolute top-6 right-6 text-white text-4xl focus:outline-none">

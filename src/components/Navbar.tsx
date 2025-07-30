@@ -50,13 +50,13 @@ const Navbar: React.FC = () => {
       <div
         className={`fixed inset-0 bg-gray-900 bg-opacity-95 transform transition-transform duration-300 ease-in-out md:hidden
           ${isOpen ? 'translate-x-0' : 'translate-x-full'}
-          flex flex-col overflow-y-auto // REMOVED 'items-center' and 'pt-20' from here
+          flex flex-col overflow-y-auto z-50 // ADDED z-50 here
         `}
       >
         <button onClick={toggleMenu} className="absolute top-6 right-6 text-white text-4xl focus:outline-none">
           <IoClose />
         </button>
-        <ul className="flex flex-col items-center space-y-6 pt-20 pb-10 w-full text-xl"> {/* ADDED 'pt-20', 'pb-10', 'w-full', 'text-xl' here */}
+        <ul className="flex flex-col items-center space-y-6 pt-20 pb-10 w-full text-xl">
           <li>
             <Link to="/" className="text-white hover:text-blue-400 transition duration-300" onClick={closeMenu}>Home</Link>
           </li>

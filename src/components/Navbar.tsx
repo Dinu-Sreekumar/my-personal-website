@@ -33,7 +33,6 @@ const Navbar: React.FC = () => {
           <li>
             <Link to="/skills" className="text-gray-300 hover:text-white text-lg font-medium transition duration-300">Skills</Link>
           </li>
-          {/* REMOVED: Resume Link */}
           <li>
             <Link to="/contact" className="text-gray-300 hover:text-white text-lg font-medium transition duration-300">Contact</Link>
           </li>
@@ -51,13 +50,13 @@ const Navbar: React.FC = () => {
       <div
         className={`fixed inset-0 bg-gray-900 bg-opacity-95 transform transition-transform duration-300 ease-in-out md:hidden
           ${isOpen ? 'translate-x-0' : 'translate-x-full'}
-          flex flex-col items-center pt-20 overflow-y-auto text-xl // Changed: removed 'justify-center', added 'pt-20' and 'overflow-y-auto'
+          flex flex-col overflow-y-auto // REMOVED 'items-center' and 'pt-20' from here
         `}
       >
         <button onClick={toggleMenu} className="absolute top-6 right-6 text-white text-4xl focus:outline-none">
           <IoClose />
         </button>
-        <ul className="flex flex-col items-center space-y-6">
+        <ul className="flex flex-col items-center space-y-6 pt-20 pb-10 w-full text-xl"> {/* ADDED 'pt-20', 'pb-10', 'w-full', 'text-xl' here */}
           <li>
             <Link to="/" className="text-white hover:text-blue-400 transition duration-300" onClick={closeMenu}>Home</Link>
           </li>
@@ -70,7 +69,6 @@ const Navbar: React.FC = () => {
           <li>
             <Link to="/skills" className="text-white hover:text-blue-400 transition duration-300" onClick={closeMenu}>Skills</Link>
           </li>
-          {/* REMOVED: Resume Link */}
           <li>
             <Link to="/contact" className="text-white hover:text-blue-400 transition duration-300" onClick={closeMenu}>Contact</Link>
           </li>
